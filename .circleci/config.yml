@@ -1,8 +1,9 @@
-version: 2.0
+version: 2.1
 jobs:
   build:
     docker:
       - image: alpine
     steps:
-      - name: The first step
-      - run: echo "Hello World"
+      - run:
+          name: The first step
+          command: echo "Hello World"
