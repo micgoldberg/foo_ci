@@ -1,0 +1,17 @@
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: alpine
+    steps:
+      - checkout
+      - run:
+          name: The Second Step
+          command: |
+            echo 'Hello World!'
+            echo 'This is the delivery pipeline 222'
+      - run:
+          name: Code Has Arrived 2
+          command: |
+            ls -al
+            echo '^^^That should look familiar^^^'
